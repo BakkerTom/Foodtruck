@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B278698EAE8B2DB90EF88274 /* Pods_Foodtruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BC305CF84329A59C118E27 /* Pods_Foodtruck.framework */; };
+		D793C11492A1551CAF78ABC3 /* Pods_FoodtruckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E5C44632D9509F27098010 /* Pods_FoodtruckTests.framework */; };
 		E2094F381DFAC62600926FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2094F371DFAC62600926FA2 /* AppDelegate.swift */; };
 		E2094F3A1DFAC62600926FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2094F391DFAC62600926FA2 /* ViewController.swift */; };
 		E2094F3D1DFAC62700926FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2094F3B1DFAC62600926FA2 /* Main.storyboard */; };
 		E2094F3F1DFAC62700926FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2094F3E1DFAC62700926FA2 /* Assets.xcassets */; };
 		E2094F421DFAC62700926FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2094F401DFAC62700926FA2 /* LaunchScreen.storyboard */; };
 		E2094F4D1DFAC62700926FA2 /* FoodtruckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2094F4C1DFAC62700926FA2 /* FoodtruckTests.swift */; };
+		E22610F91DFAC6EF00EC7F6B /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */; };
+		E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FA1DFAC70900EC7F6B /* Category.swift */; };
+		E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FC1DFAC76200EC7F6B /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D835058DCFBDACBBB1C5C7C /* Pods-FoodtruckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodtruckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodtruckTests/Pods-FoodtruckTests.release.xcconfig"; sourceTree = "<group>"; };
+		43A01FD5395DF1962ED0970F /* Pods-FoodtruckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodtruckTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodtruckTests/Pods-FoodtruckTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74E5C44632D9509F27098010 /* Pods_FoodtruckTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodtruckTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D238B1A5144EA9C87E0B47F /* Pods-Foodtruck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtruck.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodtruck/Pods-Foodtruck.release.xcconfig"; sourceTree = "<group>"; };
+		B4F15ADC798028D3AD260E05 /* Pods-Foodtruck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodtruck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodtruck/Pods-Foodtruck.debug.xcconfig"; sourceTree = "<group>"; };
+		C7BC305CF84329A59C118E27 /* Pods_Foodtruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodtruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2094F341DFAC62600926FA2 /* Foodtruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2094F371DFAC62600926FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2094F391DFAC62600926FA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +47,9 @@
 		E2094F481DFAC62700926FA2 /* FoodtruckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodtruckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2094F4C1DFAC62700926FA2 /* FoodtruckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodtruckTests.swift; sourceTree = "<group>"; };
 		E2094F4E1DFAC62700926FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		E22610FA1DFAC70900EC7F6B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		E22610FC1DFAC76200EC7F6B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B278698EAE8B2DB90EF88274 /* Pods_Foodtruck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D793C11492A1551CAF78ABC3 /* Pods_FoodtruckTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5354A362DB6A2BB6BEA4E4FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7BC305CF84329A59C118E27 /* Pods_Foodtruck.framework */,
+				74E5C44632D9509F27098010 /* Pods_FoodtruckTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E82B8614241DECC34B580C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4F15ADC798028D3AD260E05 /* Pods-Foodtruck.debug.xcconfig */,
+				8D238B1A5144EA9C87E0B47F /* Pods-Foodtruck.release.xcconfig */,
+				43A01FD5395DF1962ED0970F /* Pods-FoodtruckTests.debug.xcconfig */,
+				2D835058DCFBDACBBB1C5C7C /* Pods-FoodtruckTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2094F2B1DFAC62600926FA2 = {
 			isa = PBXGroup;
 			children = (
 				E2094F361DFAC62600926FA2 /* Foodtruck */,
 				E2094F4B1DFAC62700926FA2 /* FoodtruckTests */,
 				E2094F351DFAC62600926FA2 /* Products */,
+				9E82B8614241DECC34B580C5 /* Pods */,
+				5354A362DB6A2BB6BEA4E4FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +118,9 @@
 				E2094F371DFAC62600926FA2 /* AppDelegate.swift */,
 				E2094F391DFAC62600926FA2 /* ViewController.swift */,
 				E2094F3B1DFAC62600926FA2 /* Main.storyboard */,
+				E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */,
+				E22610FA1DFAC70900EC7F6B /* Category.swift */,
+				E22610FC1DFAC76200EC7F6B /* WebService.swift */,
 				E2094F3E1DFAC62700926FA2 /* Assets.xcassets */,
 				E2094F401DFAC62700926FA2 /* LaunchScreen.storyboard */,
 				E2094F431DFAC62700926FA2 /* Info.plist */,
@@ -103,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2094F511DFAC62700926FA2 /* Build configuration list for PBXNativeTarget "Foodtruck" */;
 			buildPhases = (
+				106DFEB7668E37411CC770A6 /* [CP] Check Pods Manifest.lock */,
 				E2094F301DFAC62600926FA2 /* Sources */,
 				E2094F311DFAC62600926FA2 /* Frameworks */,
 				E2094F321DFAC62600926FA2 /* Resources */,
+				BCC09CAB90E599E6E84F578E /* [CP] Embed Pods Frameworks */,
+				C88503F8D6A7BD44BB1BB44F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2094F541DFAC62700926FA2 /* Build configuration list for PBXNativeTarget "FoodtruckTests" */;
 			buildPhases = (
+				BABE7651301182D5CE4DAEFD /* [CP] Check Pods Manifest.lock */,
 				E2094F441DFAC62700926FA2 /* Sources */,
 				E2094F451DFAC62700926FA2 /* Frameworks */,
 				E2094F461DFAC62700926FA2 /* Resources */,
+				26E631B0619DE2F0DAD88D41 /* [CP] Embed Pods Frameworks */,
+				71D45B92AD0A7CDF3400F273 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +243,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		106DFEB7668E37411CC770A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		26E631B0619DE2F0DAD88D41 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodtruckTests/Pods-FoodtruckTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D45B92AD0A7CDF3400F273 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodtruckTests/Pods-FoodtruckTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BABE7651301182D5CE4DAEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC09CAB90E599E6E84F578E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C88503F8D6A7BD44BB1BB44F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2094F301DFAC62600926FA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -203,6 +343,9 @@
 			files = (
 				E2094F3A1DFAC62600926FA2 /* ViewController.swift in Sources */,
 				E2094F381DFAC62600926FA2 /* AppDelegate.swift in Sources */,
+				E22610F91DFAC6EF00EC7F6B /* CategoryTableViewController.swift in Sources */,
+				E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */,
+				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +480,7 @@
 		};
 		E2094F521DFAC62700926FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F15ADC798028D3AD260E05 /* Pods-Foodtruck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
@@ -350,6 +494,7 @@
 		};
 		E2094F531DFAC62700926FA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D238B1A5144EA9C87E0B47F /* Pods-Foodtruck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
@@ -363,6 +508,7 @@
 		};
 		E2094F551DFAC62700926FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43A01FD5395DF1962ED0970F /* Pods-FoodtruckTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +524,7 @@
 		};
 		E2094F561DFAC62700926FA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D835058DCFBDACBBB1C5C7C /* Pods-FoodtruckTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +557,7 @@
 				E2094F531DFAC62700926FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2094F541DFAC62700926FA2 /* Build configuration list for PBXNativeTarget "FoodtruckTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +566,7 @@
 				E2094F561DFAC62700926FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
