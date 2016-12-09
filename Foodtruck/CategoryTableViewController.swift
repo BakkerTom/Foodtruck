@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class CategoryTableViewController: UITableViewController {
     
@@ -45,12 +47,17 @@ class CategoryTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as? CategoryTableViewCell
 
+        
         // Configure the cell...
-        cell.textLabel?.text = categories[indexPath.row].title
+        let category = categories[indexPath.row]
+        
+        cell?.titleLabel.text = category.title
+        let url = URL(string: "https:" + category.imageUrl!)
+        cell?.backgroundImage.af_setImage(withURL: url!)
 
-        return cell
+        return cell!
     }
 
     /*

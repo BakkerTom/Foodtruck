@@ -10,7 +10,6 @@
 		B278698EAE8B2DB90EF88274 /* Pods_Foodtruck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7BC305CF84329A59C118E27 /* Pods_Foodtruck.framework */; };
 		D793C11492A1551CAF78ABC3 /* Pods_FoodtruckTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E5C44632D9509F27098010 /* Pods_FoodtruckTests.framework */; };
 		E2094F381DFAC62600926FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2094F371DFAC62600926FA2 /* AppDelegate.swift */; };
-		E2094F3A1DFAC62600926FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2094F391DFAC62600926FA2 /* ViewController.swift */; };
 		E2094F3D1DFAC62700926FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2094F3B1DFAC62600926FA2 /* Main.storyboard */; };
 		E2094F3F1DFAC62700926FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2094F3E1DFAC62700926FA2 /* Assets.xcassets */; };
 		E2094F421DFAC62700926FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2094F401DFAC62700926FA2 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		E22610F91DFAC6EF00EC7F6B /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */; };
 		E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FA1DFAC70900EC7F6B /* Category.swift */; };
 		E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FC1DFAC76200EC7F6B /* WebService.swift */; };
+		E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		C7BC305CF84329A59C118E27 /* Pods_Foodtruck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodtruck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2094F341DFAC62600926FA2 /* Foodtruck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtruck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2094F371DFAC62600926FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E2094F391DFAC62600926FA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E2094F3C1DFAC62700926FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2094F3E1DFAC62700926FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2094F411DFAC62700926FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +49,7 @@
 		E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		E22610FA1DFAC70900EC7F6B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E22610FC1DFAC76200EC7F6B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				E2094F371DFAC62600926FA2 /* AppDelegate.swift */,
-				E2094F391DFAC62600926FA2 /* ViewController.swift */,
 				E2094F3B1DFAC62600926FA2 /* Main.storyboard */,
+				E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */,
 				E22610F81DFAC6EF00EC7F6B /* CategoryTableViewController.swift */,
 				E22610FA1DFAC70900EC7F6B /* Category.swift */,
 				E22610FC1DFAC76200EC7F6B /* WebService.swift */,
@@ -341,11 +341,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2094F3A1DFAC62600926FA2 /* ViewController.swift in Sources */,
 				E2094F381DFAC62600926FA2 /* AppDelegate.swift in Sources */,
 				E22610F91DFAC6EF00EC7F6B /* CategoryTableViewController.swift in Sources */,
 				E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */,
 				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
+				E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,18 +14,53 @@
         <scene sceneID="A7V-9z-wCh">
             <objects>
                 <tableViewController id="u6n-Ac-wh5" customClass="CategoryTableViewController" customModule="Foodtruck" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bi3-0U-6pV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="128" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bi3-0U-6pV">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.20273003088103403" green="0.20273003088103403" blue="0.20273003088103403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="hde-IV-Nyw">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="124" id="hde-IV-Nyw" customClass="CategoryTableViewCell" customModule="Foodtruck" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="124"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hde-IV-Nyw" id="XBE-nm-who">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dhe-zK-s9b">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="072-pQ-vbt">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="124"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aziatisch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ulx-EL-i6J">
+                                            <rect key="frame" x="32" y="45" width="311" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Dhe-zK-s9b" secondAttribute="trailing" id="AZo-DB-ONP"/>
+                                        <constraint firstItem="072-pQ-vbt" firstAttribute="top" secondItem="XBE-nm-who" secondAttribute="top" id="Bjs-XD-3na"/>
+                                        <constraint firstAttribute="bottom" secondItem="Dhe-zK-s9b" secondAttribute="bottom" id="ImB-yP-9q2"/>
+                                        <constraint firstAttribute="bottom" secondItem="072-pQ-vbt" secondAttribute="bottom" id="LgK-xi-FGy"/>
+                                        <constraint firstItem="Ulx-EL-i6J" firstAttribute="leading" secondItem="XBE-nm-who" secondAttribute="leadingMargin" constant="24" id="RlE-Yu-b7h"/>
+                                        <constraint firstItem="Dhe-zK-s9b" firstAttribute="leading" secondItem="XBE-nm-who" secondAttribute="leading" id="Vvw-cK-OGE"/>
+                                        <constraint firstItem="Dhe-zK-s9b" firstAttribute="top" secondItem="XBE-nm-who" secondAttribute="top" id="Z1e-MB-Q52"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Ulx-EL-i6J" secondAttribute="trailing" constant="24" id="eSV-IJ-Unz"/>
+                                        <constraint firstItem="Ulx-EL-i6J" firstAttribute="centerY" secondItem="XBE-nm-who" secondAttribute="centerY" id="pFP-qV-fhM"/>
+                                        <constraint firstItem="072-pQ-vbt" firstAttribute="leading" secondItem="XBE-nm-who" secondAttribute="leading" id="vqO-EV-pTd"/>
+                                        <constraint firstAttribute="trailing" secondItem="072-pQ-vbt" secondAttribute="trailing" id="zrc-jQ-88D"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="backgroundImage" destination="Dhe-zK-s9b" id="qCz-Gn-rx9"/>
+                                    <outlet property="titleLabel" destination="Ulx-EL-i6J" id="sZ7-dV-c4Q"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -33,6 +69,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lekker Eten" id="fam-qG-eLE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9S-Ks-ap0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,9 +80,14 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AWZ-ld-zW8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3BJ-sT-UCq">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="3BJ-sT-UCq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
