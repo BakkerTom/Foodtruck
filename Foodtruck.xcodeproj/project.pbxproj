@@ -18,6 +18,12 @@
 		E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FA1DFAC70900EC7F6B /* Category.swift */; };
 		E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FC1DFAC76200EC7F6B /* WebService.swift */; };
 		E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */; };
+		F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */; };
+		F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3A1DFAE839003A4181 /* Recipe.swift */; };
+		F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */; };
+		F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */; };
+		F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F688871DFCAA22004ADEA4 /* InstructionsTableViewController.swift */; };
+		F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F688891DFCAA2E004ADEA4 /* Instruction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		E22610FA1DFAC70900EC7F6B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E22610FC1DFAC76200EC7F6B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
+		F5B18D3A1DFAE839003A4181 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
+		F5F688871DFCAA22004ADEA4 /* InstructionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsTableViewController.swift; sourceTree = "<group>"; };
+		F5F688891DFCAA2E004ADEA4 /* Instruction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instruction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,8 @@
 		E2094F361DFAC62600926FA2 /* Foodtruck */ = {
 			isa = PBXGroup;
 			children = (
+				F5F688841DFCA9F2004ADEA4 /* Instructions */,
+				F5B18D391DFAE81C003A4181 /* Recipe */,
 				E2094F371DFAC62600926FA2 /* AppDelegate.swift */,
 				E2094F3B1DFAC62600926FA2 /* Main.storyboard */,
 				E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */,
@@ -135,6 +149,26 @@
 				E2094F4E1DFAC62700926FA2 /* Info.plist */,
 			);
 			path = FoodtruckTests;
+			sourceTree = "<group>";
+		};
+		F5B18D391DFAE81C003A4181 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				F5B18D3A1DFAE839003A4181 /* Recipe.swift */,
+				F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */,
+				F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */,
+			);
+			name = Recipe;
+			sourceTree = "<group>";
+		};
+		F5F688841DFCA9F2004ADEA4 /* Instructions */ = {
+			isa = PBXGroup;
+			children = (
+				F5F688871DFCAA22004ADEA4 /* InstructionsTableViewController.swift */,
+				F5F688891DFCAA2E004ADEA4 /* Instruction.swift */,
+				F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */,
+			);
+			name = Instructions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,8 +378,14 @@
 				E2094F381DFAC62600926FA2 /* AppDelegate.swift in Sources */,
 				E22610F91DFAC6EF00EC7F6B /* CategoryTableViewController.swift in Sources */,
 				E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */,
+				F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */,
+				F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */,
+				F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */,
 				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
+				F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */,
 				E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */,
+				F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */,
+				F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = Foodtruck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bakker.Foodtruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +540,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = Foodtruck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bakker.Foodtruck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +556,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = FoodtruckTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bakker.FoodtruckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +573,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
 				INFOPLIST_FILE = FoodtruckTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.bakker.FoodtruckTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

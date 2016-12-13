@@ -35,4 +35,60 @@ class WebService {
         return categories
         
     }
+    
+    class func retrieveRecipies(completion: @escaping (([Recipe]) -> (Void))){
+        //let url = "http://fijnproevers.herokuapp.com/categories/1.json"
+        let url = "http://fijnproevers.herokuapp.com/recipes.json"
+        
+        Alamofire.request(url).responseJSON { handler in
+            guard let responseJSON = handler.result.value as? [[String: Any]] else {
+                completion([])
+                return
+            }
+            
+            let recipies = parseRecipies(recipeData: responseJSON)
+            print("RECIPIES WHEN PARSING: " + String(recipies.count))
+            completion(recipies)
+            //print(responseJSON)
+        }
+    }
+    
+    class func parseRecipies(recipeData: [[String: Any]]) -> [Recipe]{
+        var recipies = [Recipe]()
+        
+        for data in recipeData {
+            recipies.append(Recipe(data: data))
+        }
+        
+        return recipies
+        
+    }
+    
+    class func retrieveInstructions(completion: @escaping (([Instruction]) -> (Void))){
+        //let url = "http://fijnproevers.herokuapp.com/categories/1.json"
+        let url = "http://fijnproevers.herokuapp.com/instructions.json"
+        
+        Alamofire.request(url).responseJSON { handler in
+            guard let responseJSON = handler.result.value as? [[String: Any]] else {
+                completion([])
+                return
+            }
+            
+            let instructions = parseInstructions(instructionData: responseJSON)
+            print("RECIPIES INSTRUCTION WHEN PARSING: " + String(instructions.count))
+            completion(instructions)
+            //print(responseJSON)
+        }
+    }
+    
+    class func parseInstructions(instructionData: [[String: Any]]) -> [Instruction]{
+        var instructions = [Instruction]()
+        
+        for data in instructionData {
+            instructions.append(Instruction(data: data))
+        }
+        
+        return instructions
+        
+    }
 }
