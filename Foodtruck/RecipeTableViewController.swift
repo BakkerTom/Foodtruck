@@ -12,13 +12,27 @@ import AlamofireImage
 
 class RecipeTableViewController: UITableViewController {
 
+    var category: Category?
     var recipies = [Recipe]()
+    
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var categoryImageView: UIImageView!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+        
+        if category != nil {
+            self.title = category?.title
+            self.descriptionLabel.text = category?.description
+            let url = URL(string: "https:" + (category?.imageUrl)!)
+            self.categoryImageView.af_setImage(withURL: url!)
+        }
 
         WebService.retrieveRecipies{(recipies) -> (Void) in
             self.recipies = recipies
@@ -64,6 +78,10 @@ class RecipeTableViewController: UITableViewController {
         
         
         return cell!
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
 
