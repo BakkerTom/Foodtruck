@@ -13,7 +13,7 @@ import AlamofireImage
 class RecipeTableViewController: UITableViewController {
 
     var category: Category?
-    var recipies = [Recipe]()
+    var recipes = [Recipe]()
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
@@ -32,13 +32,13 @@ class RecipeTableViewController: UITableViewController {
             self.descriptionLabel.text = category?.description
             let url = URL(string: "https:" + (category?.imageUrl)!)
             self.categoryImageView.af_setImage(withURL: url!)
+            
+            WebService.retrieveRecipes(id: (self.category?.id)!, completion: { (results) -> (Void) in
+                self.recipes = results
+                self.tableView.reloadData()
+            })
         }
 
-        WebService.retrieveRecipies{(recipies) -> (Void) in
-            self.recipies = recipies
-            self.tableView.reloadData()
-        }
-        
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
@@ -57,8 +57,7 @@ class RecipeTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print("AMOUNT OF RECIPIES: " + String(recipies.count))
-        return recipies.count
+        return recipes.count
     }
 
     
@@ -67,13 +66,13 @@ class RecipeTableViewController: UITableViewController {
             RecipeTableViewCell
 
         // Configure the cell...
-        let recipe = recipies[indexPath.row]
+        let recipe = recipes[indexPath.row]
         
         cell?.lblTitle.text = recipe.title
         //cell?.lblDescription.text = recipe.description
         //cell?.lblInstructions.text = recipe.description
         //let url = URL(string: "https:" + recipe.imageUrl!)
-        let url = URL(string: "http://www.ah.nl.kpnis.nl/static/recepten/img_006188_445x297_JPG.jpg")
+        let url = URL(string: "http:" + recipe.imageUrl!)
         cell?.imgRecipe.af_setImage(withURL: url!)
         
         
@@ -120,14 +119,18 @@ class RecipeTableViewController: UITableViewController {
     }
     */
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if let controller = segue.destination as? RecipeViewController {
+            controller.recipe = recipes[(tableView.indexPathForSelectedRow?.row)!]
+        }
     }
-    */
+
 
 }

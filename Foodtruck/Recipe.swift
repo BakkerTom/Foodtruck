@@ -15,12 +15,14 @@ class Recipe{
     let title: String?
     let description: String?
     let imageUrl: String?
+    let url: String?
     
     init(title: String, description: String, recipeTitle: String, recipeDescription: String) {
         self.id = 0
         self.title = title
         self.description = description
         self.imageUrl = ""
+        self.url = ""
     }
     
     init(data: [String: Any]){
@@ -28,6 +30,7 @@ class Recipe{
         self.title = data["title"] as? String
         self.description = data["description"] as? String
         self.imageUrl = data["image"] as? String
+        self.url = data["url"] as? String
     }
 }
 

@@ -25,6 +25,26 @@ class WebService {
         }
     }
     
+    class func retrieveRecipes(id: Int, completion: @escaping (([Recipe]) -> (Void))){
+        let url = "https://fijnproevers.herokuapp.com/categories/\(id).json"
+        
+        Alamofire.request(url).responseJSON{ handler in
+            guard let responseJSON = handler.result.value as? [String: Any] else {
+                completion([])
+                return
+            }
+            
+            let recipesData = responseJSON["recipes"] as? [[String: Any]]
+            
+            let recipes = parseRecipies(recipeData: recipesData!)
+            
+            completion(recipes)
+        }
+        
+        
+        
+    }
+    
     class func parse(categoryData: [[String: Any]]) -> [Category]{
         var categories = [Category]()
         
@@ -36,22 +56,6 @@ class WebService {
         
     }
     
-    class func retrieveRecipies(completion: @escaping (([Recipe]) -> (Void))){
-        //let url = "http://fijnproevers.herokuapp.com/categories/1.json"
-        let url = "http://fijnproevers.herokuapp.com/recipes.json"
-        
-        Alamofire.request(url).responseJSON { handler in
-            guard let responseJSON = handler.result.value as? [[String: Any]] else {
-                completion([])
-                return
-            }
-            
-            let recipies = parseRecipies(recipeData: responseJSON)
-            print("RECIPIES WHEN PARSING: " + String(recipies.count))
-            completion(recipies)
-            //print(responseJSON)
-        }
-    }
     
     class func parseRecipies(recipeData: [[String: Any]]) -> [Recipe]{
         var recipies = [Recipe]()
