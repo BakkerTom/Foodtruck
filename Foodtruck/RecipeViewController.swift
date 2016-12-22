@@ -19,7 +19,7 @@ class RecipeViewController: UIViewController {
         
         // Testing if ingredient is being added to realm
         addRecipeIngredients()
-        queryIngredients()
+        //queryIngredients()
         
         if recipe != nil {
             
@@ -38,9 +38,9 @@ class RecipeViewController: UIViewController {
     func addRecipeIngredients(){
         
         let ingredient = RecipeIngredient()
-        ingredient.name = "worst"
-        ingredient.amount = 100
-        ingredient.image = 00100100
+        ingredient.name = "prei"
+        ingredient.amount = 200
+        ingredient.image = 0
         
         let realm = try! Realm()
         

@@ -12,6 +12,6 @@ import RealmSwift
 class RecipeIngredient: Object{
     
     dynamic var name = ""
-    dynamic var amount = 0;
-    dynamic var image = 0;
+    dynamic var amount = 0
+    dynamic var image = 0
 }
