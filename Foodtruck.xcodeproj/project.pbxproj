@@ -20,6 +20,8 @@
 		E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */; };
 		F55ADED31E0BE70500DEB1C7 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED21E0BE70500DEB1C7 /* RecipeViewController.swift */; };
 		F55ADED61E0BF15000DEB1C7 /* FoodtruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */; };
+		F55ADED81E0BF7FF00DEB1C7 /* Foodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED71E0BF7FF00DEB1C7 /* Foodtruck.swift */; };
+		F55ADEDC1E0C02F400DEB1C7 /* FVCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */; };
 		F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */; };
 		F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3A1DFAE839003A4181 /* Recipe.swift */; };
 		F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */; };
@@ -60,6 +62,8 @@
 		E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		F55ADED21E0BE70500DEB1C7 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtruckViewController.swift; sourceTree = "<group>"; };
+		F55ADED71E0BF7FF00DEB1C7 /* Foodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foodtruck.swift; sourceTree = "<group>"; };
+		F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FVCMapView.swift; sourceTree = "<group>"; };
 		F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
 		F5B18D3A1DFAE839003A4181 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */,
+				F55ADED71E0BF7FF00DEB1C7 /* Foodtruck.swift */,
+				F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */,
 			);
 			name = Foodtruck;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 				E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */,
 				F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */,
 				F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */,
+				F55ADED81E0BF7FF00DEB1C7 /* Foodtruck.swift in Sources */,
 				F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */,
 				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
 				F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */,
@@ -401,6 +408,7 @@
 				E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */,
 				F55ADED61E0BF15000DEB1C7 /* FoodtruckViewController.swift in Sources */,
 				F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */,
+				F55ADEDC1E0C02F400DEB1C7 /* FVCMapView.swift in Sources */,
 				F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

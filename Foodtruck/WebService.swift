@@ -40,9 +40,32 @@ class WebService {
             
             completion(recipes)
         }
+    }
+    
+    
+    class func retrieveFoodtrucks(completion: @escaping (([Foodtruck]) -> (Void))){
+        let url = "https://fijnproevers.herokuapp.com/foodtrucks.json"
         
+        Alamofire.request(url).responseJSON { handler in
+            guard let responseJSON = handler.result.value as? [[String: Any]] else {
+                completion([])
+                return
+            }
+            
+            let foodtrucks = parse(foodtruckData: responseJSON)
+            completion(foodtrucks)
+        }
+    }
+    
+    class func parse(foodtruckData: [[String: Any]]) -> [Foodtruck] {
+        var foodtrucks = [Foodtruck]()
         
-        
+        for data in foodtruckData {
+        foodtrucks.append(Foodtruck(data: data))
+        }
+    
+        return foodtrucks
+    
     }
     
     class func parse(categoryData: [[String: Any]]) -> [Category]{

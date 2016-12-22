@@ -11,14 +11,20 @@ import MapKit
 
 class FoodtruckViewController: UIViewController {
 
+    var foodtrucks = [Foodtruck]()
+    
     @IBOutlet weak var mapView: MKMapView!
     
     let regionRadius: CLLocationDistance = 1000
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        WebService.retrieveFoodtrucks { (foodtrucks) -> (Void) in
+            self.foodtrucks = foodtrucks
+            self.mapView.addAnnotations(foodtrucks)
+        }
         
         // set initial location in Kaatsheuvel
         let initialLocation = CLLocation(latitude: 51.668178, longitude: 5.034356)
