@@ -18,6 +18,8 @@
 		E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FA1DFAC70900EC7F6B /* Category.swift */; };
 		E22610FD1DFAC76200EC7F6B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FC1DFAC76200EC7F6B /* WebService.swift */; };
 		E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */; };
+		F55ADED31E0BE70500DEB1C7 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED21E0BE70500DEB1C7 /* RecipeViewController.swift */; };
+		F55ADED61E0BF15000DEB1C7 /* FoodtruckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */; };
 		F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */; };
 		F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3A1DFAE839003A4181 /* Recipe.swift */; };
 		F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */; };
@@ -56,6 +58,8 @@
 		E22610FA1DFAC70900EC7F6B /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		E22610FC1DFAC76200EC7F6B /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		E22610FE1DFAD27300EC7F6B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		F55ADED21E0BE70500DEB1C7 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodtruckViewController.swift; sourceTree = "<group>"; };
 		F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
 		F5B18D3A1DFAE839003A4181 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 		E2094F361DFAC62600926FA2 /* Foodtruck */ = {
 			isa = PBXGroup;
 			children = (
+				F55ADED41E0BF12700DEB1C7 /* Foodtruck */,
 				F5F688841DFCA9F2004ADEA4 /* Instructions */,
 				F5B18D391DFAE81C003A4181 /* Recipe */,
 				E2094F371DFAC62600926FA2 /* AppDelegate.swift */,
@@ -151,12 +156,21 @@
 			path = FoodtruckTests;
 			sourceTree = "<group>";
 		};
+		F55ADED41E0BF12700DEB1C7 /* Foodtruck */ = {
+			isa = PBXGroup;
+			children = (
+				F55ADED51E0BF15000DEB1C7 /* FoodtruckViewController.swift */,
+			);
+			name = Foodtruck;
+			sourceTree = "<group>";
+		};
 		F5B18D391DFAE81C003A4181 /* Recipe */ = {
 			isa = PBXGroup;
 			children = (
 				F5B18D3A1DFAE839003A4181 /* Recipe.swift */,
 				F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */,
 				F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */,
+				F55ADED21E0BE70500DEB1C7 /* RecipeViewController.swift */,
 			);
 			name = Recipe;
 			sourceTree = "<group>";
@@ -290,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		26E631B0619DE2F0DAD88D41 /* [CP] Embed Pods Frameworks */ = {
@@ -335,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BCC09CAB90E599E6E84F578E /* [CP] Embed Pods Frameworks */ = {
@@ -383,7 +397,9 @@
 				F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */,
 				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
 				F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */,
+				F55ADED31E0BE70500DEB1C7 /* RecipeViewController.swift in Sources */,
 				E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */,
+				F55ADED61E0BF15000DEB1C7 /* FoodtruckViewController.swift in Sources */,
 				F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */,
 				F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */,
 			);
