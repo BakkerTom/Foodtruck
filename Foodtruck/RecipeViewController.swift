@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RecipeViewController: UIViewController {
     
@@ -15,6 +16,10 @@ class RecipeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Testing if ingredient is being added to realm
+        addRecipeIngredients()
+        queryIngredients()
         
         if recipe != nil {
             
@@ -29,6 +34,32 @@ class RecipeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    func addRecipeIngredients(){
+        
+        let ingredient = RecipeIngredient()
+        ingredient.name = "worst"
+        ingredient.amount = 100
+        ingredient.image = 00100100
+        
+        let realm = try! Realm()
+        
+        try! realm.write {
+            realm.add(ingredient)
+            print("Added \(ingredient.name) to Realm")
+        }
+    }
+    
+    func queryIngredients(){
+        
+        let realm = try! Realm()
+        
+        let ingredients = realm.objects(RecipeIngredient)
+        
+        for ingredient in ingredients{
+            print("Name: \(ingredient.name) Amount: \(ingredient.amount)")
+        }
+    }
     
     /*
      // MARK: - Navigation
