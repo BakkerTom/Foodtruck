@@ -23,9 +23,18 @@
 		F55ADED81E0BF7FF00DEB1C7 /* Foodtruck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADED71E0BF7FF00DEB1C7 /* Foodtruck.swift */; };
 		F55ADEDC1E0C02F400DEB1C7 /* FVCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */; };
 		F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */; };
+		F58B97691E0C0C6900AE0928 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B97681E0C0C6900AE0928 /* Realm.framework */; };
+		F58B976B1E0C0CEB00AE0928 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B976A1E0C0CEB00AE0928 /* RealmSwift.framework */; };
+		F58B976D1E0C0D0500AE0928 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B976C1E0C0D0500AE0928 /* RealmData.swift */; };
+		F58D0B811E0C65FD0075DFD9 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D0B801E0C65FD0075DFD9 /* IngredientTableViewCell.swift */; };
+		F58D0B831E0C661B0075DFD9 /* IngredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D0B821E0C661B0075DFD9 /* IngredientTableViewController.swift */; };
 		F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3A1DFAE839003A4181 /* Recipe.swift */; };
 		F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */; };
 		F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */; };
+		F5D330F41E0C1074001D26AC /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B976A1E0C0CEB00AE0928 /* RealmSwift.framework */; };
+		F5D330F51E0C1074001D26AC /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F58B976A1E0C0CEB00AE0928 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5D330F61E0C1074001D26AC /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58B97681E0C0C6900AE0928 /* Realm.framework */; };
+		F5D330F71E0C1074001D26AC /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F58B97681E0C0C6900AE0928 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F688871DFCAA22004ADEA4 /* InstructionsTableViewController.swift */; };
 		F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F688891DFCAA2E004ADEA4 /* Instruction.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +48,21 @@
 			remoteInfo = Foodtruck;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5D330F81E0C1074001D26AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5D330F71E0C1074001D26AC /* Realm.framework in Embed Frameworks */,
+				F5D330F51E0C1074001D26AC /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D835058DCFBDACBBB1C5C7C /* Pods-FoodtruckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodtruckTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodtruckTests/Pods-FoodtruckTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +89,11 @@
 		F55ADED71E0BF7FF00DEB1C7 /* Foodtruck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foodtruck.swift; sourceTree = "<group>"; };
 		F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FVCMapView.swift; sourceTree = "<group>"; };
 		F572244F1DFD51C20029F82A /* InstructionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionTableViewCell.swift; sourceTree = "<group>"; };
+		F58B97681E0C0C6900AE0928 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		F58B976A1E0C0CEB00AE0928 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		F58B976C1E0C0D0500AE0928 /* RealmData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		F58D0B801E0C65FD0075DFD9 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
+		F58D0B821E0C661B0075DFD9 /* IngredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewController.swift; sourceTree = "<group>"; };
 		F5B18D3A1DFAE839003A4181 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		F5B18D3C1DFAE851003A4181 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		F5B18D3E1DFAE86E003A4181 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,7 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58B97691E0C0C6900AE0928 /* Realm.framework in Frameworks */,
 				B278698EAE8B2DB90EF88274 /* Pods_Foodtruck.framework in Frameworks */,
+				F5D330F41E0C1074001D26AC /* RealmSwift.framework in Frameworks */,
+				F58B976B1E0C0CEB00AE0928 /* RealmSwift.framework in Frameworks */,
+				F5D330F61E0C1074001D26AC /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +168,7 @@
 		E2094F361DFAC62600926FA2 /* Foodtruck */ = {
 			isa = PBXGroup;
 			children = (
+				F58D0B7F1E0C65D10075DFD9 /* GroceryList */,
 				F55ADED41E0BF12700DEB1C7 /* Foodtruck */,
 				F5F688841DFCA9F2004ADEA4 /* Instructions */,
 				F5B18D391DFAE81C003A4181 /* Recipe */,
@@ -146,6 +180,8 @@
 				E22610FC1DFAC76200EC7F6B /* WebService.swift */,
 				E2094F3E1DFAC62700926FA2 /* Assets.xcassets */,
 				E2094F401DFAC62700926FA2 /* LaunchScreen.storyboard */,
+				F58B976A1E0C0CEB00AE0928 /* RealmSwift.framework */,
+				F58B97681E0C0C6900AE0928 /* Realm.framework */,
 				E2094F431DFAC62700926FA2 /* Info.plist */,
 			);
 			path = Foodtruck;
@@ -168,6 +204,16 @@
 				F55ADEDB1E0C02F400DEB1C7 /* FVCMapView.swift */,
 			);
 			name = Foodtruck;
+			sourceTree = "<group>";
+		};
+		F58D0B7F1E0C65D10075DFD9 /* GroceryList */ = {
+			isa = PBXGroup;
+			children = (
+				F58B976C1E0C0D0500AE0928 /* RealmData.swift */,
+				F58D0B801E0C65FD0075DFD9 /* IngredientTableViewCell.swift */,
+				F58D0B821E0C661B0075DFD9 /* IngredientTableViewController.swift */,
+			);
+			name = GroceryList;
 			sourceTree = "<group>";
 		};
 		F5B18D391DFAE81C003A4181 /* Recipe */ = {
@@ -204,6 +250,8 @@
 				E2094F321DFAC62600926FA2 /* Resources */,
 				BCC09CAB90E599E6E84F578E /* [CP] Embed Pods Frameworks */,
 				C88503F8D6A7BD44BB1BB44F /* [CP] Copy Pods Resources */,
+				F5D330F81E0C1074001D26AC /* Embed Frameworks */,
+				F5D330FB1E0C10AF001D26AC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -388,6 +436,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Foodtruck/Pods-Foodtruck-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F5D330FB1E0C10AF001D26AC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -401,14 +462,17 @@
 				F57224501DFD51C20029F82A /* InstructionTableViewCell.swift in Sources */,
 				F5B18D3B1DFAE839003A4181 /* Recipe.swift in Sources */,
 				F55ADED81E0BF7FF00DEB1C7 /* Foodtruck.swift in Sources */,
+				F58D0B811E0C65FD0075DFD9 /* IngredientTableViewCell.swift in Sources */,
 				F5B18D3D1DFAE851003A4181 /* RecipeTableViewController.swift in Sources */,
 				E22610FB1DFAC70900EC7F6B /* Category.swift in Sources */,
 				F5F688881DFCAA22004ADEA4 /* InstructionsTableViewController.swift in Sources */,
 				F55ADED31E0BE70500DEB1C7 /* RecipeViewController.swift in Sources */,
 				E22610FF1DFAD27300EC7F6B /* CategoryTableViewCell.swift in Sources */,
 				F55ADED61E0BF15000DEB1C7 /* FoodtruckViewController.swift in Sources */,
+				F58B976D1E0C0D0500AE0928 /* RealmData.swift in Sources */,
 				F5B18D3F1DFAE86E003A4181 /* RecipeTableViewCell.swift in Sources */,
 				F55ADEDC1E0C02F400DEB1C7 /* FVCMapView.swift in Sources */,
+				F58D0B831E0C661B0075DFD9 /* IngredientTableViewController.swift in Sources */,
 				F5F6888A1DFCAA2E004ADEA4 /* Instruction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,6 +612,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Foodtruck",
+				);
 				INFOPLIST_FILE = Foodtruck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -563,6 +631,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VRXSKYXNPW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Foodtruck",
+				);
 				INFOPLIST_FILE = Foodtruck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
