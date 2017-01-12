@@ -8,6 +8,7 @@ target 'Foodtruck' do
   # Pods for Foodtruck
   pod 'Alamofire', '~> 4.2'
   pod 'AlamofireImage', '~> 3.2'
+  pod 'RealmSwift'
 
   target 'FoodtruckTests' do
     inherit! :search_paths
